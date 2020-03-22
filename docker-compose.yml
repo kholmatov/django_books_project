@@ -4,6 +4,9 @@ services:
   web:
     build: .
     command: python /books/manage.py runserver 0.0.0.0:8000
+    environment:
+      - SECRET_KEY=hlu1rkg41399is)#y^e8ybp-*2ixrp*mkz6a=tu5ch!arg5+kp
+      - DEBUG=1      
     volumes:
       - .:/books
     ports:
